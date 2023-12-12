@@ -11,7 +11,6 @@ def get_data(start, end, id):
     return df
 
 def plot_graph(start):
-    start = dt.date(2012,1,1)
     end = dt.date.today()
     jpn = get_data(start, end, 'IRLTLT01JPM156N')
     usa = get_data(start, end, 'DGS10')
