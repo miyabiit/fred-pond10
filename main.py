@@ -27,8 +27,12 @@ def plot_graph(start):
     
     st.pyplot()
 
+min_date = dt.date(2012,1,1)
+max_date = dt.date.today()
+
+start = st.date_input('start date', min_date, min_value=min_date, max_value=max_date)
+
 if st.button('plot'):
-    start = dt.date(2012,1,1)
     plot_graph(start)
 
     
